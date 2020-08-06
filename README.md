@@ -10,12 +10,13 @@ Ikuti langkah-langkah di bawah untuk menambahkan Facebook Login ke aplikasi Anda
 
 1. Pilih Aplikasi atau Buat Aplikasi yang Baru
 Pilih aplikasi atau buat aplikasi baru untuk memasukkan info tentang aplikasi Anda ke snippet kode berikut ini.
-
 Cari aplikasi Anda
 atauBuat Aplikasi Baru
+
 2. Unduh Aplikasi Facebook
 Unduh aplikasi Facebook dengan mengeklik tombol di bawah ini.
 Unduh Facebook untuk Android
+
 3. Mengintegrasikan SDK Facebook
 SDK Facebook Login untuk Android merupakan komponen SDK Facebook untuk Android. Untuk menggunakan SDK Facebook Login di proyek Anda, jadikan SDK Facebook Login dependensi di Maven, atau unduh. Pilih metode yang Anda inginkan dengan tombol berikut.
 SDK: MAVEN
@@ -26,7 +27,6 @@ Dalam proyek Anda, buka your_app > Gradle Scripts > build.gradle (Module: app) d
  implementation 'com.facebook.android:facebook-login:[5,6)'Salin Kode
 Buat proyek Anda.
 Saat Anda menggunakan SDK Facebook Login, acara dalam aplikasi Anda secara otomatis dicatat dan dikumpulkan untuk Facebook Analytics kecuali Anda menonaktifkan pencatatan acara otomatis. Untuk detail mengenai informasi apa yang dikumpulkan dan cara menonaktifkan pembuatan log peristiwa otomatis, lihat Pencatatan Log Peristiwa Aplikasi Otomatis.
-
 4. Edit Sumber Daya dan Manifest Anda
 Jika Anda menggunakan 5.15 atau versi lebih baru SDK Facebook untuk Android, Anda tidak perlu menambahkan aktivitas atau filter intent untuk Tab Khusus Chrome. Fungsionalitas ini disertakan dalam SDK.
 
