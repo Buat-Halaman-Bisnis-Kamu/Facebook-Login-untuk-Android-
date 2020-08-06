@@ -1,27 +1,36 @@
 
 
-Facebook Login
-Ringkasan
-iOS
-Android
-Token Akses dan Profil
-Izin
-Pemecahan Masalah
-Web
-Untuk Perangkat
-Praktik Terbaik
-Desain Pengalaman Pengguna
-Keamanan Login
-Izin
-Token Akses
-Authentication Versus Data Access
-Tes
-Tinjauan Aplikasi
-Lanjutan
-Catatan Perubahan
-Business Login for Direct Businesses
-Di Halaman Ini
-Facebook Login untuk Android - Tutorial Singkat
+# Facebook Login
+
+**Ringkasan**
+
+- [iOS]()
+- [Android]()
+- [Token Akses dan Profil]()
+- [Izin]()
+- [Pemecahan Masalah]()
+- [Web]()
+
+# Untuk Perangkat
+
+**Praktik Terbaik**
+
+- [Desain Pengalaman Pengguna]()
+- [Keamanan Login]()
+- [Izin]()
+- [Token Akses]()
+- [Authentication Versus Data Access]()
+- [Tes]()
+- [Tinjauan Aplikasi]()
+
+# Lanjutan
+
+- [Catatan Perubahan]()
+- [Business Login for Direct Businesses]()
+
+*Di Halaman Ini*
+
+**Facebook Login untuk Android** - Tutorial Singkat
 Dengan SDK Facebook untuk Android, orang dapat masuk ke aplikasi Anda dengan Facebook Login. Saat orang masuk ke aplikasi Anda dengan Facebook, mereka dapat memberi izin ke aplikasi Anda sehingga Anda dapat mengambil informasi atau melakukan tindakan di Facebook atas nama mereka.
 
 Untuk contoh proyek yang menunjukkan cara mengintegrasikan Facebook Login ke aplikasi Android, lihat FBLoginSample di GitHub.
@@ -31,20 +40,31 @@ Ikuti langkah-langkah di bawah untuk menambahkan Facebook Login ke aplikasi Anda
 1. Pilih Aplikasi atau Buat Aplikasi yang Baru
 Pilih aplikasi atau buat aplikasi baru untuk memasukkan info tentang aplikasi Anda ke snippet kode berikut ini.
 
-Cari aplikasi Anda
-atauBuat Aplikasi Baru
+[Cari aplikasi Anda]()
+
+atau [Buat Aplikasi Baru]()
+
 2. Unduh Aplikasi Facebook
 Unduh aplikasi Facebook dengan mengeklik tombol di bawah ini.
 Unduh Facebook untuk Android
+
 3. Mengintegrasikan SDK Facebook
 SDK Facebook Login untuk Android merupakan komponen SDK Facebook untuk Android. Untuk menggunakan SDK Facebook Login di proyek Anda, jadikan SDK Facebook Login dependensi di Maven, atau unduh. Pilih metode yang Anda inginkan dengan tombol berikut.
-SDK: MAVEN
-Menggunakan Maven
+
+[SDK: MAVEN]()
+
+*Menggunakan Maven*
+
 Di proyek Anda, buka your_app > Gradle Scripts > build.gradle (Project) pastikan repositori berikut tercantum di buildscript { repositories {}}:
-jcenter() Salin Kode
+
+jcenter()
+
 Dalam proyek Anda, buka your_app > Gradle Scripts > build.gradle (Module: app) dan tambahkan pernyataan penerapan berikut ini ke bagian dependencies{} untuk membuat dependensi ke versi terbaru dari SDK Facebook Login:
- implementation 'com.facebook.android:facebook-login:[5,6)'Salin Kode
-Buat proyek Anda.
+
+ implementation 'com.facebook.android:facebook-login:[5,6)'
+
+*Buat proyek Anda.*
+
 Saat Anda menggunakan SDK Facebook Login, acara dalam aplikasi Anda secara otomatis dicatat dan dikumpulkan untuk Facebook Analytics kecuali Anda menonaktifkan pencatatan acara otomatis. Untuk detail mengenai informasi apa yang dikumpulkan dan cara menonaktifkan pembuatan log peristiwa otomatis, lihat Pencatatan Log Peristiwa Aplikasi Otomatis.
 
 4. Edit Sumber Daya dan Manifest Anda
@@ -53,10 +73,14 @@ Jika Anda menggunakan 5.15 atau versi lebih baru SDK Facebook untuk Android, And
 Buat string untuk ID aplikasi Facebook Anda dan untuk aplikasi yang harus mengaktifkan Tab Khusus Chrome. Selain itu, tambahkan FacebookActivity ke manifest Android Anda.
 Buka file /app/res/values/strings.xml Anda.
 Tambahkan elemen berikut:
-<string name="facebook_app_id">572531576767979</string> <string name="fb_login_protocol_scheme">fb572531576767979</string>Salin Kode
+
+<string name="facebook_app_id">572531576767979</string> <string name="fb_login_protocol_scheme">fb572531576767979</string>
+
 Buka file /app/manifest/AndroidManifest.xml Anda.
 Tambahkan elemen uses-permission berikut setelah elemen application:
-  <uses-permission android:name="android.permission.INTERNET"/>Salin Kode
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+
 Tambahkan elemen meta-data berikut, sebuah aktivitas untuk Facebook, dan sebuah aktivitas serta filter intent untuk Tab Khusus Chrome di dalam elemen application Anda.
 <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/> <activity android:name="com.facebook.FacebookActivity" android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:label="@string/app_name" /> <activity android:name="com.facebook.CustomTabActivity" android:exported="true"> <intent-filter> <action android:name="android.intent.action.VIEW" /> <category android:name="android.intent.category.DEFAULT" /> <category android:name="android.intent.category.BROWSABLE" /> <data android:scheme="@string/fb_login_protocol_scheme" /> </intent-filter> </activity>Salin Kode
 5. Asosiasikan Nama Paket dan Kelas Default Anda dengan Aplikasi Anda
