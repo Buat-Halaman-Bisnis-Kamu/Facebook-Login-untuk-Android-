@@ -26,12 +26,12 @@ Unduh aplikasi Facebook dengan mengeklik tombol di bawah ini.
 
 [SDK: MAVEN]()
 
-Menggunakan Maven
+**Menggunakan Maven**
 Di proyek Anda, buka  *your_app > Gradle Scripts > build.gradle (Project)*  pastikan repositori berikut tercantum di buildscript { repositories {}}:
 
-----
+```javascript
 jcenter()
-----
+,,,
 
 Dalam proyek Anda, buka  *your_app > Gradle Scripts > build.gradle (Module: app)*   dan tambahkan pernyataan penerapan berikut ini ke bagian dependencies{} untuk membuat dependensi ke versi terbaru dari SDK Facebook Login:
  implementation 'com.facebook.android:facebook-login:[5,6)'Salin Kode
