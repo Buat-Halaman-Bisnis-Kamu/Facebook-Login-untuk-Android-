@@ -3,7 +3,7 @@
 **Langkah-Langkah Berikutnya**
 
 
-[Terapkan Callback Penghapusan Datashare-external]()
+[Terapkan Callback Penghapusan Datashare-external](https://developers.facebook.com/docs/apps/delete-data)
 
 Terapkan callback penghapusan data guna menanggapi permintaan orang untuk menghapus data mereka dari Facebook.
 
