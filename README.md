@@ -44,22 +44,24 @@ Buat string untuk ID aplikasi Facebook Anda dan untuk aplikasi yang harus mengak
 Buka file /app/res/values/strings.xml Anda.
 Tambahkan elemen berikut:
 
----
+----
 <string name="facebook_app_id">572531576767979</string> <string name="fb_login_protocol_scheme">fb572531576767979</string>Salin Kode
----
+----
 
 *Buka file /app/manifest/AndroidManifest.xml Anda.*
 
 Tambahkan elemen uses-permission berikut setelah elemen application:
 
----
+----
   <uses-permission android:name="android.permission.INTERNET"/>
----
+----
 
 Tambahkan elemen meta-data berikut, sebuah aktivitas untuk Facebook, dan sebuah aktivitas serta filter intent untuk Tab Khusus Chrome di dalam elemen application Anda.
 
----
+----
 <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/> <activity android:name="com.facebook.FacebookActivity" android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:label="@string/app_name" /> <activity android:name="com.facebook.CustomTabActivity" android:exported="true"> <intent-filter> <action android:name="android.intent.action.VIEW" /> <category android:name="android.intent.category.DEFAULT" /> <category android:name="android.intent.category.BROWSABLE" /> <data android:scheme="@string/fb_login_protocol_scheme" /> </intent-filter> </activity>Salin Kode
+----
+
 5. Asosiasikan Nama Paket dan Kelas Default Anda dengan Aplikasi Anda
 Nama Paket
 Nama paket Anda secara unik mengidentifikasi aplikasi Android Anda. Kami menggunakan ini untuk memungkinkan orang mengunduh aplikasi Anda dari Google Play jika mereka belum memasangnya. Anda dapat menemukan ini di Manifest Android Anda atau di file build.gradle aplikasi Anda.
