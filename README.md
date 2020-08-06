@@ -8,10 +8,15 @@ Untuk contoh proyek yang menunjukkan cara mengintegrasikan Facebook Login ke apl
 
 Ikuti langkah-langkah di bawah untuk menambahkan Facebook Login ke aplikasi Anda.
 
+
+[Cari aplikasi Anda](https://developers.facebook.com/docs/facebook-login/android?sdk=maven)
+
+
+atauBuat Aplikasi Baru
+
+
 1. Pilih Aplikasi atau Buat Aplikasi yang Baru
 Pilih aplikasi atau buat aplikasi baru untuk memasukkan info tentang aplikasi Anda ke snippet kode berikut ini.
-Cari aplikasi Anda
-atauBuat Aplikasi Baru
 
 2. Unduh Aplikasi Facebook
 Unduh aplikasi Facebook dengan mengeklik tombol di bawah ini.
