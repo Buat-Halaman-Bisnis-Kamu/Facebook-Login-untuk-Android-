@@ -20,7 +20,7 @@ Pilih aplikasi atau buat aplikasi baru untuk memasukkan info tentang aplikasi An
 
 2. Unduh Aplikasi Facebook
 Unduh aplikasi Facebook dengan mengeklik tombol di bawah ini.
-Unduh Facebook untuk Android
+[Unduh Facebook untuk Android](https://play.google.com/store/apps/details?id=com.facebook.katana&fbclid=IwAR10vRxPvRHYc_MyYuVtxsn4HZw8TdNptlOFssDPTvafPZbkz-trwUp7JSI)
 
 3. Mengintegrasikan SDK Facebook
 SDK Facebook Login untuk Android merupakan komponen SDK Facebook untuk Android. Untuk menggunakan SDK Facebook Login di proyek Anda, jadikan SDK Facebook Login dependensi di Maven, atau unduh. Pilih metode yang Anda inginkan dengan tombol berikut.
