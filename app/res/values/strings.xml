@@ -1,1 +1,9 @@
 <string name="facebook_app_id">572531576767979</string> <string name="fb_login_protocol_scheme">fb572531576767979</string>
+
+<com.facebook.login.widget.LoginButton
+    android:id="@+id/login_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp" /> 
