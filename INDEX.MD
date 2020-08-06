@@ -7,7 +7,7 @@
 
 Terapkan callback penghapusan data guna menanggapi permintaan orang untuk menghapus data mereka dari Facebook.
 
-[Token Akses dan Profilshare-external]()
+[Token Akses dan Profilshare-external](https://developers.facebook.com/docs/facebook-login/android/accesstokens)
 
 Melacak token akses dan profil pengguna Anda.
 
