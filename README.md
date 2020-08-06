@@ -22,13 +22,17 @@ Pilih aplikasi atau buat aplikasi baru untuk memasukkan info tentang aplikasi An
 Unduh aplikasi Facebook dengan mengeklik tombol di bawah ini.
 [Unduh Facebook untuk Android](https://play.google.com/store/apps/details?id=com.facebook.katana&fbclid=IwAR10vRxPvRHYc_MyYuVtxsn4HZw8TdNptlOFssDPTvafPZbkz-trwUp7JSI)
 
-3. Mengintegrasikan SDK Facebook
-SDK Facebook Login untuk Android merupakan komponen SDK Facebook untuk Android. Untuk menggunakan SDK Facebook Login di proyek Anda, jadikan SDK Facebook Login dependensi di Maven, atau unduh. Pilih metode yang Anda inginkan dengan tombol berikut.
-SDK: MAVEN
+3. Mengintegrasikan SDK Facebook **SDK Facebook Login untuk Android**  merupakan komponen SDK Facebook untuk Android. Untuk menggunakan SDK Facebook Login di proyek Anda, jadikan SDK Facebook Login dependensi di Maven, atau unduh. Pilih metode yang Anda inginkan dengan tombol berikut.
+
+[SDK: MAVEN]()
+
 Menggunakan Maven
-Di proyek Anda, buka your_app > Gradle Scripts > build.gradle (Project) pastikan repositori berikut tercantum di buildscript { repositories {}}:
-jcenter() Salin Kode
-Dalam proyek Anda, buka your_app > Gradle Scripts > build.gradle (Module: app) dan tambahkan pernyataan penerapan berikut ini ke bagian dependencies{} untuk membuat dependensi ke versi terbaru dari SDK Facebook Login:
+Di proyek Anda, buka  *your_app > Gradle Scripts > build.gradle (Project)*  pastikan repositori berikut tercantum di buildscript { repositories {}}:
+---
+jcenter()
+---
+
+Dalam proyek Anda, buka  *your_app > Gradle Scripts > build.gradle (Module: app)*   dan tambahkan pernyataan penerapan berikut ini ke bagian dependencies{} untuk membuat dependensi ke versi terbaru dari SDK Facebook Login:
  implementation 'com.facebook.android:facebook-login:[5,6)'Salin Kode
 Buat proyek Anda.
 Saat Anda menggunakan SDK Facebook Login, acara dalam aplikasi Anda secara otomatis dicatat dan dikumpulkan untuk Facebook Analytics kecuali Anda menonaktifkan pencatatan acara otomatis. Untuk detail mengenai informasi apa yang dikumpulkan dan cara menonaktifkan pembuatan log peristiwa otomatis, lihat Pencatatan Log Peristiwa Aplikasi Otomatis.
