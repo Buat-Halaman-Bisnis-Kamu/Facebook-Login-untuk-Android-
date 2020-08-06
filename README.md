@@ -12,7 +12,7 @@ Ikuti langkah-langkah di bawah untuk menambahkan Facebook Login ke aplikasi Anda
 [Cari aplikasi Anda](https://developers.facebook.com/docs/facebook-login/android?sdk=maven)
 
 
-atauBuat Aplikasi Baru
+atau [Buat Aplikasi Baru](https://developers.facebook.com/apps/572531576767979/)
 
 
 1. Pilih Aplikasi atau Buat Aplikasi yang Baru
